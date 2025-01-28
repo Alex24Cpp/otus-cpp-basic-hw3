@@ -14,10 +14,10 @@ int game_play(const int& max_value) {
 	std::string user_name;
 	std::cin >> user_name;
 
-	int attempts_count = 0;
+	int attempts_count{0};
 	int	target_value = random_value(max_value);
 
-	// For test
+	// FOR TEST
 //	std::cout << "target_value = " << target_value << std::endl;
 
 	if (check_value(attempts_count, target_value))
@@ -57,7 +57,7 @@ int print_table() {
 	std::cout << "High scores table:" << std::endl;
 
 	std::string username;
-	int high_score = 0;
+	int high_score{0};
 	while (true) {
 		// Read the username first
 		in_file >> username;

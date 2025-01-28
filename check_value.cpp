@@ -2,7 +2,7 @@
 
 int check_value(int& attempts_count, int target_value) {
 
-	int current_value = 0;
+	int current_value{0};
 //	bool not_win = true;
 
 	std::cout << "Enter your guess:" << std::endl;
@@ -23,7 +23,7 @@ int check_value(int& attempts_count, int target_value) {
 			std::cout << "greater than desired" << std::endl;
 		}
 		else {
-			std::cout << "you win!\n" << std::endl;
+			std::cout << "you win!" << std::endl << std::endl;
 			break;
 		}
 

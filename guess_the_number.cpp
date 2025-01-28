@@ -3,13 +3,17 @@
 
 int main(int argc, char** argv) {
 
-    int max_value = 10;
+    bool only_print_table{false};
+    int max_value{100};
 
- //   if (argument(argc, argv) != 0)
- //       return -1;
+    if (argc > 1) {
+        if (argument(argc, argv, only_print_table) != 0)
+            return -1;
+    }
 
-    if (game_play(max_value) != 0)
-        return -1;
+    if (!only_print_table)
+        if (game_play(max_value) != 0)
+            return -1;
 
     if (print_table() != 0)
         return -1;
