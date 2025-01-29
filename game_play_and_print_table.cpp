@@ -19,6 +19,12 @@ int game_play(const int& max_value) {
 
 	// FOR TEST
 //	std::cout << "target_value = " << target_value << std::endl;
+	//
+
+	// FOR TEST
+//	std::cout << "max_value = " << max_value << std::endl;
+	//
+
 
 	if (check_value(attempts_count, target_value))
 		return -1;

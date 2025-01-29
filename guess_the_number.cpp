@@ -7,7 +7,7 @@ int main(int argc, char** argv) {
     int max_value{100};
 
     if (argc > 1) {
-        if (argument(argc, argv, only_print_table) != 0)
+        if (argument(argc, argv, only_print_table, max_value) != 0)
             return -1;
     }
 
