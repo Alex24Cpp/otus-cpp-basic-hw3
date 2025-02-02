@@ -25,9 +25,6 @@ int argument(int argc, char** argv, bool& only_print_table, int& max_value) {
 		}
 
 		int b = std::atoi(argv[2]);
-		// FOR TEST
-//		std::cout << "b = " << b << std::endl;
-		//
 		if (b != 0) {
 			max_value = b;
 			return 0;
